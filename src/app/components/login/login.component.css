@@ -1,0 +1,18 @@
+.col-lg-4{
+    background-color: #A64B63;
+    color: #F2F2F2;   
+    
+}
+
+.btn{
+    background-color: #F2F2F2;
+    color: #A64B63;
+}
+.form-floating{
+    color: #A64B63;
+}
+
+img{
+    height: 40px;
+    margin-top: 5%;
+}

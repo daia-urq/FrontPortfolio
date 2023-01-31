@@ -1,0 +1,48 @@
+.card{  
+    border-style: solid;  
+    border-color:#A64B63;
+    border-radius: 5px;
+}
+
+.titulo{
+   margin-bottom: 2%;
+}
+
+#primario{        
+    padding-bottom: 1%; 
+    margin-top: 1%;
+}
+
+.container{
+    background-color: #F2F2F2;
+    border-radius: 5px;  
+    border-width: 1px;
+    border-style: solid;  
+    border-color:#A64B63; 
+    color: #A64B63;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+    padding-top: 1%;
+}
+
+.card-header {     
+    background-color: #F2EDDC;
+}
+
+.card-body {
+    background-color: #F2F2F2;
+    color: #A64B63;
+    border-radius: 5px;
+}
+
+.button{
+    border: none;
+    color: #A64B63;
+    background-color: transparent;
+}
+
+.btn{
+   background-color: #A64B63 ;
+   color: #F2F2F2;
+}

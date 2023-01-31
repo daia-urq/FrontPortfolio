@@ -1,0 +1,35 @@
+.container {
+    padding-top: 1%;
+    padding-bottom: 2%;
+    background-color:#A64B63;
+    border-radius: 5px;
+    color: #F2F2F2;
+}
+
+h3{
+    padding-bottom: 2%;
+}
+.card {
+    margin-top: 1%;
+    background-color:#F2F2F2;
+}
+
+.card-header {    
+    color:#A64B63;
+    border-color:#A64B63;   
+}
+
+.card-body {   
+    color: #A64B63;
+}
+
+.button{
+     border: none;
+     color: #A64B63;
+     background-color: transparent;
+}
+
+.btn{
+    background-color: #F2F2F2;
+    color: #A64B63;
+}

@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <img src={{persona.img}} class="img-fluid rounded-circle" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
+            <h1 id="nombre">{{persona.nombre}} {{persona.apellido}} </h1>
+            <h3>{{persona.titulo1}}</h3>
+            <h3>{{persona.titulo2}}</h3>
+            <div class="col-lg-6">
+                <button type="button" class="btn" [routerLink]="['/editarAcercaDe/1']" *ngIf="isLogged">Editar persona
+                </button>
+            </div>
+        </div>
+
+        <div id="about" class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+            <h4 class="fw-normal ">Acerca de mi</h4>
+            <p>{{persona.acercaDe}}</p>
+        </div>
+
+    </div>
+</div>

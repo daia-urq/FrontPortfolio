@@ -1,0 +1,31 @@
+input{
+    background-color:#F2F2F2;
+    margin-top: 1%;  
+    margin-bottom: 1%;  
+}
+
+label{
+    margin-bottom: 1%;    
+}
+
+.form-group{
+    text-align: start;
+}
+
+#descripcionExp{
+    padding-bottom: 5%; 
+}
+
+.btn{
+    margin-top: 2%;
+    background-color: #F2F2F2;
+    color: #A64B63;
+}
+
+.container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color:#A64B63;
+    border-radius: 5px;
+    color: #F2F2F2;
+}

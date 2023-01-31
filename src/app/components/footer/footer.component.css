@@ -1,0 +1,33 @@
+.container{
+    color:#A5A6A1;     
+}
+
+.footer{
+    border-color:#A64B63;  
+}
+
+img{
+    width: 150px;
+}
+
+ul{
+    justify-content: start;
+}
+
+.miNombre{
+    justify-content: end;
+}
+
+@media(max-width: 766px){ 
+    .miNombre{
+        text-align: center; 
+        justify-content:center;
+        margin-bottom: 1%;
+    } 
+    ul{
+        justify-content: center;       
+    }
+    img{
+        width: 100px;
+    }
+}

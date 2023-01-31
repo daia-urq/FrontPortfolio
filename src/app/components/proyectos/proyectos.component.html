@@ -1,0 +1,26 @@
+<div class="container">
+  <div>
+    <h3>Proyectos</h3>
+  </div>
+
+  <div class="col-lg-2">
+    <button type="button" class="btn" [routerLink]="['/newProyecto']" *ngIf="isLogged">Cargar proyecto </button>
+  </div>
+
+  <div class="cards" >
+    <div class="card mb-3" *ngFor="let Proyecto of proyecto">
+      <div class="col-sm-12 ccc" *ngIf="isLogged">
+        <button type="button" class="button" [routerLink]="['/editarProyecto',Proyecto.id]">
+          <i class="bi bi-pencil-square"></i></button>
+        <button class="button" type="button" (click)="delete(Proyecto.id)">
+          <i class="bi bi-trash3"></i></button>
+      </div>
+      <!-- <img src={{Proyecto.imagenP}} class="card-img-top" alt=""> -->
+      <div class="card-body">
+        <h5 class="card-title">{{Proyecto.nombreProy}}</h5>
+        <p class="card-text">{{Proyecto.descripcionProy}}</p>
+        <a href={{Proyecto.direccion}}><small class="text-muted">link</small></a>      
+      </div>
+    </div>
+  </div>
+</div>

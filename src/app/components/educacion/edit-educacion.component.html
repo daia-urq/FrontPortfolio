@@ -1,0 +1,23 @@
+<div class="px-6 py-5 my-5 text-center">
+    <div class="col-lg-10 mx-auto border rounded-3">
+        <div class="container" *ngIf="educa">
+            <div class="row">
+                <div>
+                    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                        <div class="form-group">
+                            <label for="nombreEdu">Nombre educación</label>
+                            <input type="text" class="form-control" id="nombreEdu" name="nombreEdu" [(ngModel)]="educa.nombreEdu" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcionEdu">Descripción</label>
+                            <input type="text" class="form-control" id="descripcionEdu" name="descripcionEdu" [(ngModel)]="educa.descripcionEdu" required>
+                        </div>
+                        <button class="btn">
+                            Modificar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

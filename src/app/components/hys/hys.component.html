@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="titulo">
+    <h3>Habilidades</h3>
+  </div>
+  <div class ="col-lg-2">
+    <button type="button" class="btn" [routerLink]="['/nuevaskill']" *ngIf="isLogged">Cargar skill </button>
+</div>
+
+
+  <div class="row text-center">
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2" *ngFor="let Skill of skill">
+      <div>
+        <circle-progress 
+          [title]= "(Skill.nombreSkill)"
+          [showTitle]="true"
+          [showUnits]="false"
+          [showSubtitle]="false"
+          [percent]="(Skill.porcentaje)"
+          [radius]="50"
+          [outerStrokeWidth]="8"
+          [innerStrokeWidth]="4"
+          [outerStrokeColor]="'#8C0327'"
+          [outerStrokeGradientStopColor]="'#A64B63'"
+          [innerStrokeColor]="'#A5A6A1'"
+          [outerStrokeGradient]="true">
+        </circle-progress>
+      </div>
+      <div> 
+        <button type="button" class="button"  routerLink="/editskill/{{Skill.id}}">
+          <i class="bi bi-pencil-square"></i>
+        </button>
+        <button class="button" type="button" (click)="delete(Skill.id)">
+          <i class="bi bi-trash3"></i>
+        </button>
+      </div>   
+    </div>  
+  </div>
+</div>
