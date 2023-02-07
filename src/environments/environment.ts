@@ -13,7 +13,9 @@ export const environment = {
     messagingSenderId: '137198368019',
     measurementId: 'G-827W1M5JJL',
   },
-  production: false
+  production: false,
+  //URL: 'http://localhost:8080/', 
+  URL: 'https://portfolio-backend-45tv.onrender.com/'
 };
 
 /*

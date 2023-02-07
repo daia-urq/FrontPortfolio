@@ -1,6 +1,6 @@
-img{
-    width: 140px;
-    padding-right: 15px;
+#logo{
+    width: 100px; 
+    margin-right: 10%;
 }
 
 .redes img{
@@ -11,11 +11,26 @@ img{
 .navbar{
     background-color: #A64B63;        
     color: #F2F2F2;
+    
+}
+.row{
+    display: contents;
 }
 
 header{
-    color: #F2F2F2;
+    color: #F2F2F2;    
 }
+
+
+.col-auto {   
+    display: flex;
+    align-items: center;
+}
+
+.me-auto{
+    margin-bottom: 10px;
+}
+
 #dropdown05{
     color: #F2F2F2;
 }
@@ -31,4 +46,3 @@ header{
         width: 100px;
     }   
 }
-

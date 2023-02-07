@@ -16,7 +16,7 @@
           [showUnits]="false"
           [showSubtitle]="false"
           [percent]="(Skill.porcentaje)"
-          [radius]="50"
+          [radius]="60"
           [outerStrokeWidth]="8"
           [innerStrokeWidth]="4"
           [outerStrokeColor]="'#8C0327'"
@@ -25,7 +25,7 @@
           [outerStrokeGradient]="true">
         </circle-progress>
       </div>
-      <div> 
+      <div *ngIf="isLogged"> 
         <button type="button" class="button"  routerLink="/editskill/{{Skill.id}}">
           <i class="bi bi-pencil-square"></i>
         </button>

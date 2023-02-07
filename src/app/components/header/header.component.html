@@ -1,48 +1,39 @@
 <header>
-  <nav class="navbar navbar-expand-xl" aria-label="Fifth navbar example">
+  <nav class="navbar" aria-label="Fifth navbar example">
     <div class="container-fluid">
-      <img src="../../../assets/APlogo.png" />
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarsExample05"
-        aria-controls="navbarsExample05"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="row">
 
-      <div class="collapse navbar-collapse" id="navbarsExample05">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="dropdown05"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              >Menu</a
-            >
-            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+        <div class="col-auto me-auto">
+          <img src="../../../assets/APlogo.png"  id="logo"/>
+          <div class="dropdown dropdown-item">
+            <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown">
+              Menu
+            </button>
+            <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Acerca de mi</a></li>
               <li><a class="dropdown-item" href="#">Experiencia</a></li>
               <li><a class="dropdown-item" href="#">Educacion</a></li>
               <li><a class="dropdown-item" href="#">Habilidades</a></li>
               <li><a class="dropdown-item" href="#">Proyectos</a></li>
             </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="redes">
-        <a href=""><img src="../../../assets/facebook.png" alt="" /></a>
-        <a href=""><img src="../../../assets/instagram.png" alt="" /></a>
-        <a href=""><img src="../../../assets/linkedin.png" alt="" /></a>
-        <a href=""><img src="../../../assets/github.png" alt="" /></a>
-      </div>
-      <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Ingresar</button>
+          </div>
+        </div>
+
+        <div class="col-auto">
+          <div class="redes">
+            <a href="https://www.facebook.com/daia.urquilla.5/"><img src="../../../assets/facebook.png" alt="" /></a>
+            <a href="https://www.instagram.com/daiaurquilla/"><img src="../../../assets/instagram.png" alt="" /></a>
+            <a href="https://www.linkedin.com/in/daiana-urquilla-17712b22a/"><img src="../../../assets/linkedin.png"
+                alt="" /></a>
+            <a href="https://github.com/DaiaUrq"><img src="../../../assets/github.png" alt="" /></a>
+          </div>
+          <div>
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Ingresar</button>
             <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Salir</button>
+          </div>
+        </div>
+
+      </div>
     </div>
   </nav>
   <app-banner></app-banner>

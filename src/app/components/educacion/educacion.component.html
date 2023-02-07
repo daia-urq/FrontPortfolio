@@ -2,33 +2,30 @@
   <div class="titulo">
     <h3>Educación</h3>
   </div>
-  <div class="col-lg-3">
+  <div class="col-lg-2">
     <button type="button" class="btn" [routerLink]="['/nuevaedu']" *ngIf="isLogged">Cargar educación </button>
   </div>
 
-  <div class="row d-flex justify-content-around" id="primario">
-    <div class="col-12 col-lg-6" *ngFor="let Educacion of educacion">
-      <div class="card">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-lg-10">
-              
-                <h5 class="card-title">{{Educacion.nombreEdu}}</h5>
-              
-            </div>
-            <div class="col-lg-2" *ngIf="isLogged">
-              <button type="button" class="button" [routerLink]="['/editedu',Educacion.id]">
-                <i class="bi bi-pencil-square"></i></button>
-              <button class="button" type="button" (click)="delete(Educacion.id)">
-                <i class="bi bi-trash3"></i></button>              
-            </div>
-          </div>
-          <hr class="my-1">
-          <p class="card-text">
-            {{Educacion.descripcionEdu}}
-          </p>        
+  <div class="card" *ngFor="let Educacion of educacion">
+    <div class="card-header">
+      <div class="row">
+        <div class="col-sm-10">
+          <h4>{{Educacion.nombreEdu}}</h4>
+        </div>
+        <div class="col-sm-2" *ngIf="isLogged">
+          <button type="button" class="button" [routerLink]="['/editedu',Educacion.id]">
+            <i class="bi bi-pencil-square"></i></button>
+          <button class="button" type="button" (click)="delete(Educacion.id)">
+            <i class="bi bi-trash3"></i></button>
         </div>
       </div>
     </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>
+            {{Educacion.descripcionEdu}}
+          </p>
+        </blockquote>
+      </div>
+    </div>
   </div>
-</div>
